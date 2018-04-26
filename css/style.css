@@ -5,9 +5,6 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:600);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
 /*       'Open Sans', sans-serif     */
-@import "../css/reset.css";
-@import "../css/grid.css";
-@import "../css/menu.css";
 @import "../css/font-awesome.css";
 
 input {
