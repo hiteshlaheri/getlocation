@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Click the button to get your position.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+ <div id="map"></div>
+    <script>
+ var x = document.getElementById("demo");
+
+function initMap() {
+   
+    if (navigator.geolocation) {
+ 	var uluru = {lat:  navigator.geolocation.getCurrentPosition.position.coords.latitude,lng: navigator.geolocation.getCurrentPosition.position.coords.longitude};
+    
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+	label:'Tatva Technovation',
+ 	title: 'Tatva Technovation',
+          });
+        }
+    else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC89mH02NfYk2OYoFzxs0rp9yBpS6SSqZY&callback=initMap">
+    </script>
+
+ </div>
+</body>
+</html>
