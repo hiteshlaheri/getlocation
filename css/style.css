@@ -5,6 +5,9 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:600);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
 /*       'Open Sans', sans-serif     */
+@import "../css/reset.css";
+@import "../css/grid.css";
+@import "../css/menu.css";
 @import "../css/font-awesome.css";
 
 input {
@@ -150,6 +153,7 @@ ul.list1 time {
 nav.bt-menu  ul li {
 	font: bold 18px/26px 'Open Sans', sans-serif;
 	color: #848282;
+        float: left;
 }
 
 .bt-menu ul {
@@ -163,6 +167,13 @@ nav.bt-menu  ul li {
 	text-align: center;
 	white-space: nowrap;
 	
+}
+.bt-menu li a {
+    display: block;
+    color: inherit;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 /*links*/
 
